@@ -1,0 +1,100 @@
+/* body {
+    background-color: #020202;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(161.54, 82%, 66%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(180.00, 97%, 52%) 0, transparent 55%);
+} */
+body {
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(at 47% 33%, rgb(243, 237, 239) 0, transparent 300%), 
+        radial-gradient(at 82% 65%, rgb(198, 25, 207) 0, transparent 55%);
+}
+/* body {
+    background-color: #fdfdfb;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(165.00, 37%, 98%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(89.71, 92%, 57.99999999999999%) 0, transparent 55%);
+} */
+.color{
+    color: rgb(37, 37, 37);
+    font-size: 17px;
+    font-family:  'Arial Narrow Bold', serif;
+}
+.button {
+display: inline-block;
+border-radius: 4px;
+background-color: rgb(106, 73, 208);
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 22px;
+padding: 10px;
+width: 250px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
